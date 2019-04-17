@@ -1,4 +1,4 @@
-# Envirotron - Garden Monitor
+# Envirotron
 Logs temperature and humidity from DHT11, DHT22 or AM2302 sensors over the Raspberry Pi GPIO.
 
 Now supports Pi Camera. Take regular snapshots of your garden and measure your growth!
