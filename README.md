@@ -21,3 +21,15 @@ git clone https://github.com/mike-t/dht22.git
   * ```run_camera.py``` to take a photo
 
 HINT: if you want to use Grafana ensure the suite above is installed and runs at startup. Then, run ```run_sensor_logged.py``` for local logfile and set up Telegraf to process it.
+
+## Roadmap
+
+Evolve into a garden control system. 
+
+* Visual dashboard with guages and live video or snahshots
+* dynamic rules to control power based on sensor readings or camera movement. For example:
+  * turn on sprinklers if humdity drops below ```50%```
+  * engage cooling systems if temperature exceeds ```20C```
+  * turn on lights if detect motion above ```20%``` (wildlife deterrent)
+
+Not actively developed, currently in hobbyist mode.
