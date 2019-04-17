@@ -1,3 +1,4 @@
 token.pickle
 google_credentials.json
 *.log
+photos/*.jpg
