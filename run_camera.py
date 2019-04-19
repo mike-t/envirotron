@@ -26,8 +26,11 @@ camera = PiCamera()
 # grab the date and time
 timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S') 
 
-# get focus, then snap a photo and save it
+# give time to focus and adjust light, then take a photo and save it
+camera.rotation = 270
 camera.start_preview()
 sleep(5)
+# save one for the log, and one for latest image display
 camera.capture(PHOTO_PATH + '/photo_' + timestamp + '.jpg')
+camera.capture(PHOTO_PATH + '/photo_latest.jpg')
 camera.stop_preview()
